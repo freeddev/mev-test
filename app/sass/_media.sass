@@ -1,0 +1,217 @@
+@import "vars"
+
+
+
+@media (min-width: 1200px)
+	.container
+		width: 1000px
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	.flex-column-992
+		flex-direction: column
+	.flex-start-992
+		align-items: flex-start !important
+	.sec-2
+		.wrp-img 
+			img
+				width: 100%
+		.article
+			margin-top: -90px
+	.main-footer 
+		.links,
+		.info
+			padding-left: 45px
+		.letter
+			padding-left: 55px
+		.logo 
+			margin-bottom: 15px
+
+			
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	.sec-2 
+		.article
+			margin-top: 0
+			&:first-child 
+				margin-top: -90px
+	.main-footer 
+		.info, 
+		.links
+			padding-left: 0 
+		.letter
+			padding-left: 15px
+		.column 
+			.footer-form 
+				input[type=text]
+					width: 100%
+			.text
+				.block
+					display: inline
+			.title
+				margin-top: 50px
+		.low-footer 
+			.block
+				flex-direction: column
+				justify-content: flex-start
+				align-items: flex-start
+		.social
+			display: block
+		.block 
+			flex-direction: row
+	
+
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	
+	.mob-menu
+		display: block
+		cursor: pointer
+	.close
+		cursor: pointer
+	.hidden-480
+		display: none
+	.wrp-toggle-mnu.close 
+		transform: translate(-300px)
+		transition: 0.5s ease all
+	.wrp-toggle-mnu.open
+		transform: translate(0px)
+		transition: 0.5s ease all
+	.wrp-toggle-mnu
+		display: block 
+		position: fixed 
+		top: 0
+		left: 0
+		bottom: 0
+		z-index: 10000
+		width: 209px
+		background: #fff
+		transform: translate(-300px)
+		.top-toggle
+			background: #a4c894
+			color: #fff 
+			font-size: 20px
+			text-align: center
+			text-transform: uppercase
+			padding: 11px 0
+			position: relative
+		.close
+			width: 14px 
+			height: 14px
+			position: absolute
+			left: 15px
+			top: 50%
+			margin-top: -7px
+			background: url(../img/close.svg) no-repeat
+			background-size: cover
+			
+		.body 
+			background: #fff
+			margin-top: 39px
+			.tog-menu
+				.item-menu
+					list-style: none
+					padding: 10px 0
+					padding-left: 35px
+					background-repeat: no-repeat
+					background-position: 0% 50%
+					margin-left: 15px
+					a 
+						color: #000
+						text-transform: uppercase
+
+					a.active 
+						font-weight: bold
+						border-bottom: 2px solid #86b670
+					&:nth-child(1)
+						background-image: url(../img/mob/home.svg)
+					&:nth-child(2)
+						background-image: url(../img/mob/blog.svg)
+					&:nth-child(3)
+						background-image: url(../img/mob/cont.svg)
+	.mob-menu
+		width: 18px
+		height: 14px
+		background: url(../img/menu.png) no-repeat
+		background-size: cover
+
+	.social
+		display: none
+	.search 
+		display: block 
+		width: 17px
+		height: 17px
+		background: url(../img/glass.png) no-repeat
+		background-size: cover
+
+	.top-header 
+		.header-slider 
+			.item-slide 
+				.title 
+					margin-top: 40px
+				.title,
+				.slide-text
+					padding: 0 20px
+	.sec 
+		.title-section 
+			.descr
+				.block
+					display: inline
+	.sec-2 
+		.title-section 
+			.descr
+				padding: 0 15px
+	.main-footer 
+		.low-footer 
+			.block 
+				border: 0
+			.text
+				padding-bottom: 35px
+				margin-bottom: 15px
+				width: 100%
+				border-bottom: 1px solid #808080
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+

@@ -1,0 +1,430 @@
+@import "fonts"
+@import "libs"
+@import "base"
+@import "vars"
+
+
+
+
+.mob-menu,
+.search
+	display: none 
+.top-header
+	background-color: rgba(0, 0, 0, .99)
+	background-size: cover
+	margin-top: -107px
+	.line 
+		position: relative
+		overflow: hidden
+		&:after
+			width: 97%
+			height: 1px
+			background: #fff 
+			content: ''
+			margin: auto
+			position: absolute
+			bottom: 0
+	.padding 
+		padding-top: 17px
+		padding-bottom: 17px
+
+		
+	.logo 
+		padding-left: 0
+
+	.social
+		padding-right: 0
+		text-align: right
+		cursor: default
+		.soc-link
+			display: inline-block
+			.soc
+				display: block 
+				margin-left: 7px
+				border-radius: 50%
+				width: 27px
+				height: 27px
+				background-color: rgba(254, 254, 254, .75)
+				background-image: url(../img/icons.png)
+				background-repeat: no-repeat
+				background-position-y: 50%
+				cursor: pointer
+				transition: 0.5s ease background-color
+
+				&:hover
+					background-color: rgba(254, 254, 254, 1) 
+					transition: 0.5s ease background-color
+			&:first-child 
+				.soc
+					margin-left: 0
+				
+			.twitter
+				background-position-x: -14%
+			.facebook
+				background-position-x: 50%
+			.rss
+				background-position-x: 114%
+	.navigation
+		padding-top: 15px
+		.menu-item
+			margin-right: 28px
+			a 
+				color: #fff
+				text-transform: uppercase
+
+			a.active 
+				border-bottom: 2px solid #86b670
+				font-weight: 500
+	.z-index
+		z-index: 999
+		position: relative
+		top: 107px
+	.header-slider
+		text-align: center
+		height: 100%
+		.slick-arrow
+			width: 45px
+			z-index: 99
+			height: 45px
+			outline: none
+			border-radius: 50%
+			border: 0
+			background: transparent
+			color: transparent
+			background-image: url(../img/arrow.svg) 
+			background-repeat: no-repeat
+			-webkit-background-size: cover
+			-moz-background-size: cover
+			background-size: cover
+			position: absolute
+			top: 50%
+			opacity: .2
+			margin-top: -22.5px
+			cursor: pointer
+			transition: .5s ease opacity
+			&:hover 
+				opacity: 1
+				transition: .5s ease opacity
+		.slick-next
+			right: 30px
+		.slick-prev 
+			left: 30px
+			transform: rotate(180deg)
+		.slick-dots
+			display: flex 
+			justify-content: center
+			padding: 0
+			margin-top: -56px
+			li 
+				display: inline-block
+				width: 12px
+				height: 12px
+				button
+					height: 12px
+					width: 12px
+					background: transparent 
+					color: transparent
+					font-size: 0
+					border: 0
+					position: relative
+					outline: none
+					cursor: pointer
+					&:after 
+						content: ''
+						width: 6px
+						height: 6px
+						background: #fff 
+						position: absolute
+						top: 50%
+						margin-top: -3px
+						left: 50%
+						margin-left: -3px
+						border-radius: 50%
+			li.slick-active
+				button
+					&:after
+						transform: scale(1.9)
+			
+		.item-slide
+			color: #fff
+			height: 100vh
+			display: flex 
+			flex-direction: column 
+			justify-content: center
+			background-repeat: no-repeat
+			background-size: cover
+			box-shadow: 9999px 9999px 9999px 9999px rgba(0, 0, 0, .65) inset
+			&:nth-child(1)
+				background-image: url(../img/top-slider/s1.jpg)
+			&:nth-child(2)
+				background-image: url(../img/top-slider/s2.jpg)
+			&:nth-child(3)
+				background-image: url(../img/top-slider/s3.jpg)
+			&:nth-child(4)
+				background-image: url(../img/top-slider/s4.jpg)
+			&:nth-child(5)
+				background-image: url(../img/top-slider/s5.jpg)
+			&:nth-child(6)
+				background-image: url(../img/top-slider/s6.jpg)
+
+
+			.title
+				font-size: 26px
+				font-weight: bold
+				text-transform: uppercase
+				.accent 	
+					color: #86b670
+			.slide-text
+				font-size: 16px
+				margin-top: 25px
+			.wrp-button
+				margin-top: 40px
+				.button 
+					border: 2px solid #fff
+					background: transparent
+					width: 170px
+					height: 30px
+					color: #fff 
+					outline: none
+					text-transform: uppercase
+					font-size: 10px
+					font-weight: bold
+					cursor: pointer
+
+.sec 
+	.title-section
+		text-align: center
+		border-bottom: 1px solid #cccccc
+		.title
+			font-weight: bold
+			font-size: 16px
+			color: #666262
+			text-transform: uppercase
+			margin-bottom: 12px
+		.descr
+			font-size: 12px
+			color: #9b9999
+			margin-bottom: 41px
+			font-family: 'Helvetica'
+.sec-1
+	padding-top: 46px
+	padding-bottom: 50px
+	.title-section
+		margin-top: 45px
+	.service
+		text-align: center
+		margin-top: 40px
+		&:nth-child(1)
+			.title
+				background-image: url(../img/services/s1.svg)
+		&:nth-child(2)
+			.title
+				background-image: url(../img/services/s2.svg)
+		&:nth-child(3)
+			.title
+				background-image: url(../img/services/s3.svg)
+		.title
+			margin-bottom: 11px
+			text-transform: uppercase
+			color: #666262
+			padding-top: 88px
+			font-size: 14px
+			background-position: 50% 0
+			background-repeat: no-repeat
+			
+				
+		.text 
+			color: #9b9999
+			font-size: 12px
+			margin-bottom: 5px
+			padding: 0 18px
+			font-family: 'Helvetica'
+		.link 
+			color: #86b670
+			font-size: 12px
+			&:hover 
+				text-decoration: none
+
+
+.sec-2 
+	.title-section
+		border: 0
+		background: #efefef
+		padding-bottom: 164px
+		padding-top: 41px
+		.descr
+			margin-bottom: 2px
+	.article
+		text-align: center
+		position: relative
+		margin-top: -132px
+		
+		padding-bottom: 45px
+
+		.title
+			font-size: 14px
+			text-transform: uppercase
+			margin-top: 14px
+			a 
+				color: #666262
+				&:hover 
+					text-decoration: none
+.sec-3
+	padding-bottom: 50px
+	.title-section	
+		padding-top: 28px
+		border: 0
+		border-top: 1px solid #cccccc
+		.descr
+			margin-bottom: 17px
+
+
+	.wrp-button
+		.button
+			background-color: rgb(134, 182, 112)
+			width: 170px
+			height: 30px
+			letter-spacing: 1.2px
+			text-transform: uppercase
+			color: #fff
+			font-size: 10px
+			border: 0
+			font-weight: 500
+
+.main-footer
+	background: #333333
+	padding-top: 50px
+	.block
+		width: 100%
+		display: flex 
+		justify-content: space-between
+		align-items: center
+		.text 
+			font-family: 'Helvetica'
+			font-size: 10px
+			color: #9b9999
+			letter-spacing: 0.15px
+			margin-top: 14px
+			line-height: 1.8
+	.info
+		padding-left: 81px
+	.links 
+		padding-left: 32px
+	.letter 
+		padding-left: 65px
+		.text
+			margin-bottom: 23px !important	
+	.column
+		.title
+			font-weight: bold 
+			font-size: 14px
+			color: #fff
+			text-transform: uppercase
+			margin-bottom: 10px
+
+		.column-item,
+		.text
+			list-style: none
+			font-family: 'Helvetica'
+			font-size: 10px
+			color: #9b9999
+			margin-bottom: 10px
+		.column-item.accent
+			font-family: 'Acrom'
+			font-size: 12px
+			color: #fff
+		.footer-form
+			display: flex 
+			align-items: center
+
+			.send
+				background-color: rgb(130, 130, 130)
+				width: 40px
+				height: 29px
+				font-size: 10px
+				border: 0 
+				color: #fff
+				font-weight: bold
+				text-transform: uppercase
+				margin-left: 3px
+			input[type=text]
+				background-color: rgb(78, 76, 76)
+				width: 127px
+				height: 29px
+				border: 0
+				padding: 0
+				text-indent: 11px
+				font-size: 10px
+				font-family: 'Helvetica'
+
+	.low-footer
+		margin-top: 28px	
+		.block 
+			border-top: 1px solid #808080
+			padding: 14px 0
+		.text
+			font-family: 'Acrom'
+			font-weight: bold
+			font-size: 9px
+			color: #808080
+			text-transform: uppercase
+			padding-top: 0	
+			margin-top: 0	
+			.accent
+				color: #cbcbcb
+		.menu
+			.menu-item
+				a 
+					color: #808080
+					text-transform: uppercase
+					font-size: 9px
+					&:hover 
+						border: 0
+						text-decoration: none
+			.slash
+				color: #808080
+				font-size: 9px
+				margin: 0 1px
+				cursor: default
+	.links
+		.column-item
+			margin-bottom: 0px
+			a 
+				color: #9b9999
+				padding-left: 10px
+				background: url(../img/bullet.svg) no-repeat 0% 50%
+	.social
+		padding-right: 0
+		text-align: right
+		cursor: default
+		.soc-link
+			display: inline-block
+			.soc
+				display: block 
+				margin-right: 9px
+				border-radius: 50%
+				width: 23px
+				height: 23px
+				background-color: rgba(254, 254, 254, .75)
+				background-image: url(../img/icons.png)
+				background-repeat: no-repeat
+				background-position-y: 50%
+				cursor: pointer
+				transition: 0.5s ease background-color
+
+				&:hover
+					background-color: rgba(254, 254, 254, 1) 
+					transition: 0.5s ease background-color
+			&:first-child 
+				.soc
+					margin-left: 0
+			.twitter
+				background-position-x: -11%
+			.facebook
+				background-position-x: 50%
+			.rss
+				background-position-x: 111%
+
+.wrp-toggle-mnu
+	display: none
+@import "media" // Всегда в конце
